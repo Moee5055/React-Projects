@@ -2,33 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.arrowBtn {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    color: #fff;
-    filter: drop-shadow(0px 0px 5px #555);
-    cursor: pointer;
-}
-
-.arrow_left {
-    left: 1rem;
-
-}
-
-.arrow_right {
-    right: 1rem;
-}
-
-.show_img {
-    display: block;
-}
-
-.hide_img {
-    display: none;
-}
-
 .btn {
     @apply py-3 px-3 tracking-wider border bg-black text-white
 }
+
+
+.arrowBtn {
+    @apply size-10 absolute top-[50%] text-white cursor-pointer
+}
+
+.leftArrowBtn {
+    @apply left-3
+}
+
+.rightArrowBtn {
+    @apply right-3
+}
+
+.circleBtn {
+    @apply rounded-full size-3 }
