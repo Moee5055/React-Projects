@@ -7,6 +7,7 @@ import { getData } from "@/lib/dataFetch";
 import ProductsList from "@/Components/LoadMore/Products";
 import NavComponent from "@/Components/TreeView/NavComponent";
 import menus from "@/Components/TreeView/data";
+import QrGenerator from "@/Components/QRgenerator/QrGenerator";
 
 const url = "https://picsum.photos/v2/list?page=1&limit=5";
 const productsUrl = `https://dummyjson.com/products?limit=20&select=title,price,thumbnail`;
@@ -23,7 +24,8 @@ export default async function Home() {
       <StarRatingComponnet totalStars={5} />
       <ImageSlider data={imageData} /> */}
         {/* {products && <ProductsList products={products} />} */}
-        <NavComponent menus={menus} />
+        {/* <NavComponent menus={menus} /> */}
+        <QrGenerator />
       </Suspense>
     </>
   );
