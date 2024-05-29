@@ -5,13 +5,15 @@ import StarRatingComponnet from "@/Components/StarRating/StarRating";
 import ImageSlider from "@/Components/ImageSlider/ImageSlider";
 import { getData } from "@/lib/dataFetch";
 import ProductsList from "@/Components/LoadMore/Products";
+import NavComponent from "@/Components/TreeView/NavComponent";
+import menus from "@/Components/TreeView/data";
 
 const url = "https://picsum.photos/v2/list?page=1&limit=5";
 const productsUrl = `https://dummyjson.com/products?limit=20&select=title,price,thumbnail`;
 
 export default async function Home() {
-  const imageData = await getData(url);
-  const { products } = await getData(productsUrl);
+  // const imageData = await getData(url);
+  // const { products } = await getData(productsUrl);
 
   return (
     <>
@@ -20,7 +22,8 @@ export default async function Home() {
       <ColorGenerator />
       <StarRatingComponnet totalStars={5} />
       <ImageSlider data={imageData} /> */}
-        {products && <ProductsList products={products} />}
+        {/* {products && <ProductsList products={products} />} */}
+        <NavComponent menus={menus} />
       </Suspense>
     </>
   );
