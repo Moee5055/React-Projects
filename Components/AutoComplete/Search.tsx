@@ -15,10 +15,6 @@ const Display = ({ search }: { search: string }) => {
     },
   });
 
-  if (isFetching) {
-    return <h2>Data is Fetching ....</h2>;
-  }
-
   if (isError) {
     return <h2>Error Fetching data..</h2>;
   }
