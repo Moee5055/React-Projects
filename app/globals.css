@@ -21,3 +21,8 @@
 
 .circleBtn {
     @apply rounded-full size-3 }
+
+
+    .active {
+        @apply bg-white text-black
+    }
