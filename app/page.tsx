@@ -8,9 +8,11 @@ import ProductsList from "@/Components/LoadMore/Products";
 import NavComponent from "@/Components/TreeView/NavComponent";
 import menus from "@/Components/TreeView/data";
 import QrGenerator from "@/Components/QRgenerator/QrGenerator";
+import Scroll_Indicator from "@/Components/Scroll_Indicator/Scroll_Indicator";
 
 const url = "https://picsum.photos/v2/list?page=1&limit=5";
 const productsUrl = `https://dummyjson.com/products?limit=20&select=title,price,thumbnail`;
+const p_url = `https://dummyjson.com/products?limit=100`;
 
 export default async function Home() {
   // const imageData = await getData(url);
@@ -25,7 +27,8 @@ export default async function Home() {
       <ImageSlider data={imageData} /> */}
         {/* {products && <ProductsList products={products} />} */}
         {/* <NavComponent menus={menus} /> */}
-        <QrGenerator />
+        {/* <QrGenerator /> */}
+        <Scroll_Indicator />
       </Suspense>
     </>
   );
