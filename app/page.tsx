@@ -10,6 +10,8 @@ import menus from "@/Components/TreeView/data";
 import QrGenerator from "@/Components/QRgenerator/QrGenerator";
 import Scroll_Indicator from "@/Components/Scroll_Indicator/Scroll_Indicator";
 import Autocomplete from "@/Components/AutoComplete/Autocomplete";
+import Scroll from "@/Components/Scroll_To_Button/Scroll";
+import Index from "@/Components/Scroll_To_Container/Index";
 
 const url = "https://picsum.photos/v2/list?page=1&limit=5";
 const productsUrl = `https://dummyjson.com/products?limit=20&select=title,price,thumbnail`;
@@ -30,7 +32,9 @@ export default async function Home() {
         {/* <NavComponent menus={menus} /> */}
         {/* <QrGenerator /> */}
         {/* <Scroll_Indicator /> */}
-        <Autocomplete />
+        {/* <Autocomplete /> */}
+        {/* <Scroll /> */}
+        <Index />
       </Suspense>
     </>
   );
