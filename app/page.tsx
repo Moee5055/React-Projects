@@ -12,6 +12,8 @@ import Scroll_Indicator from "@/Components/Scroll_Indicator/Scroll_Indicator";
 import Autocomplete from "@/Components/AutoComplete/Autocomplete";
 import Scroll from "@/Components/Scroll_To_Button/Scroll";
 import Index from "@/Components/Scroll_To_Container/Index";
+import App from "@/Components/FoodReciepe/App";
+// import { App } from "@/Components/WeatherApp/App";
 
 const url = "https://picsum.photos/v2/list?page=1&limit=5";
 const productsUrl = `https://dummyjson.com/products?limit=20&select=title,price,thumbnail`;
@@ -34,7 +36,10 @@ export default async function Home() {
         {/* <Scroll_Indicator /> */}
         {/* <Autocomplete /> */}
         {/* <Scroll /> */}
-        <Index />
+        {/* <Index /> */}
+        {/* <App />
+         */}
+        <App />
       </Suspense>
     </>
   );

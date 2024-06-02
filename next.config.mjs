@@ -14,6 +14,18 @@ const nextConfig = {
         port: "",
         pathname: "/products/**",
       },
+      {
+        protocol: "https",
+        hostname: "forkify-api.herokuapp.com",
+        port: "",
+        pathname: "/images/**",
+      },
+      {
+        protocol: "http",
+        hostname: "forkify-api.herokuapp.com",
+        port: "",
+        pathname: "/images/**",
+      },
     ],
   },
 };
